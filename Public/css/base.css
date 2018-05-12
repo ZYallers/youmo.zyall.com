@@ -1,0 +1,95 @@
+body{
+    /* background-color: #EFF0F0; */
+}
+/* header滚动固定 */
+.ym-nav.fixed.fixed-top{
+    z-index:8;
+    background:#fff;
+    width:100%;
+    padding:0;
+    border-bottom:solid 3px #0a8;
+    -webkit-box-shadow:0 3px 6px rgba(0, 0, 0, .175);
+    box-shadow:0 3px 6px rgba(0, 0, 0, .175);
+}
+/* banner图片 */
+.ym-banner-tag{
+    position: absolute; 
+    border-radius: 0;
+    font-size: 75%;
+    background: #999;
+    padding: 0.1em 0.5em 0.2em;
+    color: #fff;
+}
+@media (max-width:760px){
+    .ym-banner{ height: 200px; }
+    .ym-banner img{ width: 100%; height: 200px; }
+    .ym-banner2{ height: 120px; }
+    .ym-banner2 img{ width: 100%; height: 120px; }
+}
+@media (min-width:761px) and (max-width:1000px){
+    .ym-banner{ height: 220px!important; }
+    .ym-banner img{ width: 100%; height: 220px!important; }
+    .ym-banner2{ height: 140px!important; }
+    .ym-banner2 img{ width: 100%; height: 140px!important; }
+}
+@media (min-width:1001px) and (max-width:1200px){
+    .ym-banner{ height: 300px!important; }
+    .ym-banner img{ width: 100%; height: 300px!important; }
+    .ym-banner2{ height: 200px!important; }
+    .ym-banner2 img{ width: 100%; height: 200px!important; }
+}
+@media (min-width:1201px){
+    .ym-banner{ height: 350px!important; }
+    .ym-banner img{ width: 100%; height: 350px!important; }
+    .ym-banner2{ height: 250px!important; }
+    .ym-banner2 img{ width: 100%; height: 250px!important; }
+}
+.ym-mengban{
+    background-color: #e6e6e6;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ym-mengban:hover{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.ym-banner-title{
+    background: url('/Public/image/banner-title-bg.png') no-repeat;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;  
+    padding: 20px 15px 5px; 
+    position: absolute; 
+    left: 0px; 
+    bottom: 0px;
+    width: 100%;
+}
+a.ym-banner-title:hover{
+    color: #fff;
+}
+/* 首页列表 */
+#ym-list .panel-body img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* 返回顶部 */
+#ym-gotop{
+    position: fixed;
+    right: 5px;
+    bottom: 0;
+    color: #999;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 9;
+}
+#ym-gotop:hover{
+    color: #0a8;;
+}
+
